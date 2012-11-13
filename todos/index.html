@@ -45,7 +45,7 @@
 
   {{#collection contentBinding="Todos.todosController" tagName="ul" itemClassBinding="content.isDone"}}
     <label>
-      {{view Em.Checkbox checkedBinding="content.isDone"}}{{content.title}}
+      {{view Em.Checkbox checkedBinding="content.isDone"}}{{view.content.title}}
     </label>
   {{/collection}}
   </script>
